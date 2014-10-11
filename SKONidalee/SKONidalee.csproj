@@ -39,9 +39,8 @@
 + <HintPath>..\..\..\..\..\..\..\..\..\Lsharp\LeagueSharp\System\LeagueSharp.Common.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
-    <Reference Include="SharpDX, Version=2.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\..\Lsharp\LeagueSharp\System\SharpDX.dll</HintPath>
+    <Reference Include="SharpDX">
+<HintPath>..\..\..\..\..\..\..\..\..\Lsharp\LeagueSharp\System\SharpDX.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
