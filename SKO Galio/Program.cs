@@ -131,7 +131,7 @@ namespace SKO_Galio
 
         private static void OnGameUpdate(EventArgs args)
         {
-            Orbwalker.SetAttacks(true);
+            Orbwalker.SetAttack(true);
             //Orbwalker.SetMovement(true);
 
             if (Config.Item("ActiveCombo").GetValue<KeyBind>().Active) {
