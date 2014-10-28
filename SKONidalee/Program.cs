@@ -152,7 +152,7 @@ namespace SKONidalee
                   Player = ObjectManager.Player;
                   QC = new Spell(SpellSlot.Q, Player.AttackRange + 50);
                   SOD = new Items.Item(3131, Player.AttackRange + 50);
-                  Orbwalker.SetAttacks(true);
+                  Orbwalker.SetAttack(true);
 
                   CheckSpells();
 
@@ -177,7 +177,7 @@ namespace SKONidalee
           private static void Combo()
           {
                   var target = SimpleTs.GetTarget(Q.Range, SimpleTs.DamageType.Magical);
-                  Orbwalker.SetAttacks((!Q.IsReady() || W.IsReady()));
+                  Orbwalker.SetAttack((!Q.IsReady() || W.IsReady()));
 
                   if (target != null)
                   {
@@ -209,7 +209,7 @@ namespace SKONidalee
                               }
                               if (Config.Item("UseQComboCougar").GetValue<bool>() && Player.Distance(target) <= Q.Range)
                               {
-                                  Orbwalker.SetAttacks(true);
+                                  Orbwalker.SetAttack(true);
                                   QC.Cast(target);
                               }
 
@@ -233,7 +233,7 @@ namespace SKONidalee
                               }
                               if (Config.Item("UseQComboCougar").GetValue<bool>() && Player.Distance(target) <= Q.Range)
                               {
-                                  Orbwalker.SetAttacks(true);
+                                  Orbwalker.SetAttack(true);
                                   QC.Cast(target);
                               }
 
